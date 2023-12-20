@@ -11,12 +11,18 @@ ul {
     background-color: #1F2937;
     display: flex;
     color: white;
-    padding: 5;
-    margin: 5;
+    margin: 5px;
     width: auto;
     gap: 20px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 100px;
 }
 
+.container {
+    padding
+}
 body {
     margin: 0;
     padding: 0;
@@ -32,37 +38,50 @@ body {
     color: white;
     flex-direction: row;
     flex: 1;
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - 160px);
     height: 50vh;
     white-space: normal;
     word-wrap: normal;
     text-wrap: wrap;
     gap: 5%;
+    margin: 80px;
+    overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .button {
     background-color: #3882f6;
     border-radius: 8px;
+    color: white;
 }
 
 .container3 {
     display:flex;
     flex-direction: row;
-    margin: 50px;
     gap: 80px;
-    margin-left: 0;
-    margin-right: 0;
-
+    padding: 8px;
+    margin: 80px;
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    width: 15vw;
     /* center images */
+    max-height: 100%;
+    height: auto;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* create blue rounded borders */
+    border-radius: 8px;
+    border: 5px solid #3882F6;
+
+}
+
+.text {
+    /* center text */
+    text-align: center;
 }
 
 .center {
@@ -79,7 +98,8 @@ img {
     display: flex;
     flex-direction: row;
     background-color: lightgray;
-    padding: 80px;
+    padding: 100px;
+    margin: 80px;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
@@ -87,17 +107,19 @@ img {
 
 .tag {
     display: flex;
-    justify-content: right;
-    align-items: left;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-direction: column;
     margin: 10px;
     padding: 30px;
-    font-style: bold;
+    font-style: normal;
     font-weight: 900;
+    font-size: 18px;
 }
 
 .fortyeight {
     font-size: 48px;
+    font-weight: bold;
 }
 
 .container5 {
@@ -105,19 +127,21 @@ img {
     color: white;
     border-radius: 8px;
     padding: 5px;
-    margin: 50px;
+    margin: 75px;
+    margin-left: 20;
+    margin-right: 20;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 10%;
 }
 
 .own {
-    display: block;
+    /* display: block; */
     width: 100%;
-    font-style: bold;
+    font-style: normal;
     font-weight: bold;
-
 }
 
 .button2 {
@@ -128,6 +152,9 @@ img {
     color: white;
     font-size: 18px;
     border-radius: 8px;
+    border: 2px solid #f4f6f8;
+    margin: 10px;
+    padding: 5px 25px;
 }
 
 .container6 {
@@ -148,6 +175,7 @@ img {
     margin: 10px;
     padding: 30px;
     font-size: 18px;
-    font-style: italic;
+    font-style: normal;
     font-weight: lighter;
 }
+
